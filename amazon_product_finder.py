@@ -40,7 +40,7 @@ class AmazonBot:
 		action = ActionChains(bot)
 		
 
-		time.sleep(10) # select payment method (you can decrease time, if payment method is already selected by default)
+		time.sleep(10) # select payment method manually (you can decrease time, if payment method is already selected by default)
 		
 		
 		next_= bot.find_element_by_name('ppw-widgetEvent:SetPaymentPlanSelectContinueEvent')
