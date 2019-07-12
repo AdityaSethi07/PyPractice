@@ -42,11 +42,6 @@ class AmazonBot:
 
 		time.sleep(10) # select payment method (you can decrease time, if payment method is already selected by default)
 		
-
-
-		#cash_on_delivery = bot.find_element_by_class_name('a-box pmts-instrument-box')
-		#action.move_to_element(cash_on_delivery).perform()
-		#cash_on_delivery.click()
 		
 		next_= bot.find_element_by_name('ppw-widgetEvent:SetPaymentPlanSelectContinueEvent')
 		action.move_to_element(next_).perform()
